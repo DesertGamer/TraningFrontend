@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {impdort('tailwindcss').Config} */
 module.exports = {
   mode: 'jit', // add this,
   content: [
