@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sweetalert2/themes": "^5.0.10",
+    "axios": "^0.26.0",
+    "btoa": "^1.2.1",
+    "cookie": "^0.4.2",
+    "cookie-cutter": "^0.2.0",
+    "cookies": "^0.8.0",
+    "cookies-next": "^2.0.4",
+    "discord-oauth2": "^2.9.0",
+    "dns": "^0.2.2",
+    "fetch": "^1.1.0",
+    "fs": "^0.0.1-security",
+    "js-cookie": "^3.0.1",
+    "md5": "^2.3.0",
+    "mongoose": "^6.3.1",
+    "mysql2": "^2.3.3",
+    "next": "^12.2.5",
+    "next-auth": "^4.2.1",
+    "next-cookies": "^2.0.3",
+    "next-images": "^1.8.4",
+    "node-fetch": "^3.2.0",
+    "obs-websocket-js": "^5.0.0",
+    "passport": "^0.5.2",
+    "passport-discord": "^0.1.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.4.0",
+    "react-image-crop": "^9.1.1",
+    "react-native-fs": "^2.19.0",
+    "react-skinview3d": "^3.0.1",
+    "react-toastify": "^8.2.0",
+    "skincutjs": "^1.0.4",
+    "styled-components": "^5.3.5",
+    "sweetalert2": "^11.4.3",
+    "sweetalert2-react-content": "^4.2.0",
+    "tailwind-styled-components": "^2.1.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}

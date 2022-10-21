@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@font-face {*/
+/*    font-family: "Work Sans";*/
+/*    src: url("../fonts/WorkSans.ttf");*/
+/*}*/
+
+@font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/WorkSans.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/WorkSans-ExtraBold.ttf") format("opentype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/WorkSans-Bold.ttf") format("opentype");
+    font-weight: 700;
+}
+
+
+.button {
+    @apply flex w-[90px] h-[90px] flex-col text-center justify-center items-center cursor-pointer whitespace-normal bg-slate-600 rounded-lg
+}
+
+.header-question {
+    @apply w-max h-max m-auto text-[44px] not-italic font-[800];
+}
+
+*, *:after, *:before {
+    font-family: 'Work Sans';
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     outline: none !important;
+     box-shadow: none !important;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* Снятие некоторых стилей для кнопок и т.п */
+button, input, textarea, pre {
+    border: 0;
+    outline:none;
+}
+
+/* SVG иконки */
+.svg-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.card {
+    @apply bg-[#1C1C1C] w-[336px] h-[210px] border-[#3F3F3F] border-solid border-[0.5px] rounded-[15px];
+}
+
+.time-line {
+    @apply w-[19.64px] h-[19.23px] bg-[#2F3232] rounded-[5px]
+}
+
+.card-stats {
+    @apply bg-[#1C1C1C] w-[290px] h-[100px] border-[#3F3F3F] border-solid border-[0.5px] rounded-[15px];
+}
+
+.card-socials {
+    @apply w-[308px] h-[68px] rounded-[10px];
+}
+
+.dot-menu:after {
+    content: ' ';
+    font-size: 100px;
+}
+
+.dot-menu {
+    @apply bg-white w-[5px] h-[5px] rounded-full
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#fff;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#fff;
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:#fff;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:#fff;
+}
