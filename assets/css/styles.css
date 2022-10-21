@@ -2,28 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/*@font-face {*/
-/*    font-family: "Work Sans";*/
-/*    src: url("../fonts/WorkSans.ttf");*/
-/*}*/
-
 @font-face {
-    font-family: "Work Sans";
-    src: url("../fonts/WorkSans.ttf") format("opentype");
+    font-family: "Raleway";
+    src: url("../fonts/Raleway.ttf");
 }
 
 @font-face {
-    font-family: "Work Sans";
-    src: url("../fonts/WorkSans-ExtraBold.ttf") format("opentype");
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-ExtraBold.ttf") format("opentype");
     font-weight: 800;
 }
 
 @font-face {
-    font-family: "Work Sans";
-    src: url("../fonts/WorkSans-Bold.ttf") format("opentype");
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Bold.ttf") format("opentype");
     font-weight: 700;
 }
-
 
 .button {
     @apply flex w-[90px] h-[90px] flex-col text-center justify-center items-center cursor-pointer whitespace-normal bg-slate-600 rounded-lg
@@ -34,7 +28,7 @@
 }
 
 *, *:after, *:before {
-    font-family: 'Work Sans';
+    font-family: 'Raleway';
      box-sizing: border-box;
      margin: 0;
      padding: 0;

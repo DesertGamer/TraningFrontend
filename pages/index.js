@@ -1,104 +1,112 @@
 import { useRouter } from 'next/router'
-import FirstBlockImg from "/assets/svg/FirstBlockImg.svg"
-import AppleLogo from "/assets/svg/AppleLogo.svg"
-import GooglePlayLogo from "/assets/svg/GooglePlayLogo.svg"
-import FeyaVverh from "/assets/svg/FeyaVverh.png"
-import Next from "/assets/svg/Next.svg"
-import Prev from "/assets/svg/Prev.svg"
-
+import Discord from "/assets/svg/Discord.svg"
+import Vkontakte from "/assets/svg/Vkontakte.svg"
+import Logo from "/assets/svg/Logo.svg"
+import Wallet from '/assets/svg/Wallet.svg'
+import Cart from '/assets/svg/Cart.svg'
+import Star from '/assets/svg/Star.svg'
+import Case from '/assets/svg/Case.svg'
+import Gamepad from '/assets/svg/Gamepad.svg'
+import Trash from '/assets/svg/Trash.svg'
+import Image_Block2 from "/assets/svg/Image_Block2.svg"
 import Header from "../components/Header";
 
 export default function Home() {
     const router = useRouter()
 
     return (
-        <div className={`bg-[#F6F6FE] fixed overflow-auto min-h-full min-w-full h-screen w-full bg-cover`}>
+        <div className={`bg-[#111414] fixed overflow-auto min-h-full min-w-full h-screen w-full bg-cover`}>
             <Header/>
-
-            <div className={"w-full h-[500px] flex justify-center mt-[84px]"}>
-                <div className={"flex bg-[#5D5FEF] w-[1271px] h-[498px] rounded-[30px]"}>
-                    <div className={"flex flex-col justify-center items-center ml-[53px]"}>
-                        <div className={"text-[70px] text-white font-bold tracking-[-0.02em] leading-[70px]"}>Earning rewards has never been so easy</div>
-                        <div className={"flex mt-[35px]"}>
-                            <div className={"flex justify-center items-center w-[273px] p-[10px] h-[75px] bg-black text-white rounded-[12px]"}>
-                                <img width={"41px"} height={"50px"} src={AppleLogo}/>
-                                <div className={"text-center ml-[10px]"}>Download on the<br/>app store</div>
-                            </div>
-                            <div className={"flex justify-center items-center w-[250px] h-[75px] bg-black text-white rounded-[12px] ml-[21px]"}>
-                                <img width={"50px"} height={"50px"} src={GooglePlayLogo}/>
-                                <div className={"text-center ml-[10px]"}>Download on the<br/>app store</div>
-                            </div>
-                        </div>
-                    </div>
-                    <img src={FirstBlockImg} width={"696px"} height={"360px"}/>
-                </div>
-            </div>
-
-            <div className={"w-full mt-[77px] flex flex-col items-center"}>
-                <div className={"font-[400] text-[#7879F1]  text-[30px]"}>How It Works</div>
-                <div className={"text-[48px] font-[700] leading-[49px] w-[523px] text-center"}>What our customers say about us ?</div>
-
-                <div className={"grid grid-cols-3 grid-rows-1 gap-[160px]"}>
-                    <div className={"child:text-[24px] flex flex-col justify-center items-center"}>
-                        <img height={'318px'} width={'318px'} src={FeyaVverh}/>
-                        <div className={"w-[245px] font-bold"}>Track your <span className={"text-[#A5A6F6]"}>savings</span></div>
-                        <div className={"w-[293px] text-center"}>Track your savings and build better spending habbits</div>
-                    </div>
-                    <div className={"child:text-[24px] flex flex-col justify-center items-center"}>
-                        <img height={'318px'} width={'318px'} src={FeyaVverh}/>
-                        <div className={'w-[307px] font-bold'}>Accomplish your <span className={"text-[#A5A6F6]"}>goals</span></div>
-                        <div className={"w-[351px] text-center"}>Accomplish your savings goals </div>
-                    </div>
-                    <div className={"child:text-[24px] flex flex-col justify-center items-center"}>
-                        <img height={'318px'} width={'318px'} src={FeyaVverh}/>
-                        <div className={"w-[248px] font-bold"}>Redeem <span className={"text-[#A5A6F6]"}>rewards</span></div>
-                        <div className={"w-[323px] text-center"}>Redeem rewards when you accomplish your savings goals. </div>
+            <div className="h-[597px] w-full bg-gradient-to-b from-[#DB00FF] to-[#A22CFF] flex justify-between items-center">
+                <div className="ml-[290px] h-max w-max child:flex flex-col child:justify-center child:items-center">
+                    <div className="text-white font-bold text-[32px] mb-[15px] ml-[15px]">Бесплатно. Удобно. Функционально.</div>
+                    <div className="flex child:font-bold child:cursor-pointer child:ml-[25px] child:h-[39px] child:w-[154px] child:justify-center">
+                        <div className="bg-[#FFFFFF] text-[#7401CE] p-[10px] flex items-center rounded-[5px] cursor-pointer">FAQ</div>
+                        <div className="border-solid border-[1px] border-white p-[10px] flex items-center rounded-[5px] text-white">Авторизоваться</div>
+                        <div className="bg-[#FFFFFF] text-[#7401CE] p-[10px] flex items-center rounded-[5px] cursor-pointer">Дискорд</div>
                     </div>
                 </div>
+                <img src={Image_Block2}/>
             </div>
+        {/*    <div className="h-[672px] w-full child:text-white mt-[60px]">*/}
+        {/*    <div className="header-question">Возможности</div>*/}
+        {/*    <div className="mt-[45px]">*/}
+        {/*        <div className="grid grid-cols-[336px_336px_336px] grid-row-[70px_70px_70px] gap-[75px] justify-center">*/}
+        {/*            <div className="card">*/}
+        {/*                <div className="w-full h-full child:flex flex-col justify-center items-stretch p-[25px]">*/}
+        {/*                    <img className="mb-[15px] self-center" src={Wallet} width="45px" height="45px"/>*/}
+        {/*                    <div className="flex-col self-center">*/}
+        {/*                        <div className="text-[16px] font-bold">Удобные розыгрыши</div>*/}
+        {/*                        <div className="text-[14px] font-light mt-[5px]">Наш продукт может помочь поднять активность на Вашем Twitch канале</div>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="card">*/}
+        {/*                <div className="w-full h-full child:flex flex-col justify-center items-stretch p-[25px]">*/}
+        {/*                    <img className="mb-[15px] self-center" src={Cart} width="45px" height="45px"/>*/}
+        {/*                    <div className="flex-col self-center">*/}
+        {/*                        <div className="text-[16px] font-bold">Уровни, поинты</div>*/}
+        {/*                        <div className="text-[14px] font-light mt-[5px]">На сервере используется <span className="text-[#9C4FED]">алмазы</span> в качестве основной валюты.</div>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="card">*/}
+        {/*                <div className="w-full h-full child:flex flex-col justify-center items-stretch p-[25px]">*/}
+        {/*                    <img className="mb-[15px] self-center" src={Star} width="45px" height="45px"/>*/}
+        {/*                    <div className="flex-col self-center">*/}
+        {/*                        <div className="text-[16px] font-bold">Помощь модераторам</div>*/}
+        {/*                        <div className="text-[14px] font-light mt-[5px]">Дружелюбный интерфейс и возможность указать доступы для управления в нашей панели управления</div>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="card">*/}
+        {/*                <div className="w-full h-full child:flex flex-col justify-center items-stretch p-[25px]">*/}
+        {/*                    <img className="mb-[15px] self-center" src={Case} width="45px" height="45px"/>*/}
+        {/*                    <div className="flex-col self-center">*/}
+        {/*                        <div className="text-[16px] font-bold">Игровые активности</div>*/}
+        {/*                        <div className="text-[14px] font-light mt-[5px]">Доступны уникальные активности для Вашего чата с помощью которых Вы можете проводить розыгрыши, интерактивы.</div>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="card">*/}
+        {/*                <div className="w-full h-full child:flex flex-col justify-center items-stretch p-[25px]">*/}
+        {/*                    <img className="mb-[15px] self-center" src={Gamepad} width="45px" height="45px"/>*/}
+        {/*                    <div className="flex-col self-center">*/}
+        {/*                        <div className="text-[16px] font-bold">Интеграция в API игр</div>*/}
+        {/*                        <div className="text-[14px] font-light mt-[5px]">Возможность по кастомной команде выводить статистику прямо с API игры обновляющую в реальном времени.</div>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
 
-            <div className={"w-full mt-[100px] flex flex-col justify-center items-center"}>
-                <div className={'text-[30px] text-[#7879F1]'}>WHAT THEY SAY </div>
-                <div className={"text-[48px] font-[700] w-[523px] text-center leading-[49px]"}>What our customers say about us ?</div>
-            </div>
+        {/*            <div className="card">*/}
+        {/*                <div className="w-full h-full child:flex flex-col justify-center items-stretch p-[25px]">*/}
+        {/*                    <img className="mb-[15px] self-center" src={Trash} width="35px" height="35px"/>*/}
+        {/*                    <div className="flex-col self-center">*/}
+        {/*                        <div className="text-[16px] font-bold">Скоро</div>*/}
+        {/*                        <div className="text-[14px] font-light mt-[5px]"><span className="text-[#9C4FED]">Скоро</span></div>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
 
-            <div className={"w-full flex pt-[110px] pb-[33px] mt-[25px] bg-[#D8D8FF]"}>
-                <div className={"flex flex-col w-full justify-center items-center"}>
-
-                    <div className={"flex w-full justify-center items-center"}>
-                        <div className={"text-[252px] text-[#5D5FEF] mr-[700px] mb-[90px] mb-[50px] absolute z-1"}>“</div>
-                        <div className={"font-[700] text-[44px] text-[#2F2E41] leading-[50px] mt-[30px] z-20 w-[700px] h-[204px] text-center"}>It was hard to discipline myself in the past. The rewards deffinetly help me achieve my goals. </div>
-                        <div className={"text-[252px] text-[#5D5FEF] mt-[300px] ml-[730px] absolute z-1 scale-y-[-1] rotate-180"}>“</div>
+        {/*</div>*/}
+            <div className="h-[280px] w-full child:text-white border-t-[0.5px] border-white/[15%] border-solid flex justify-around items-end">
+                <div className="flex items-center">
+                    <div className="flex items-center">
+                        <img src={Logo}/>
                     </div>
-
-                    <div className={"mt-[50px] text-[30px] font-[700]"}>~ Marry from Canada</div>
-
-                    <div className={"flex w-full child:text-[32px] child:text-center justify-evenly items-center"}>
-                        <div className={"flex justify-center items-center"}>
-                            <img className={"mr-[14px]"} src={Prev}/>
-                            <div>Prev</div>
-                        </div>
-                        <div className={"flex justify-center items-center"}>
-                            <div>Next</div>
-                            <img className={"ml-[14px]"} src={Next}/>
-                        </div>
+                    <div className="ml-[13px]">
+                        <div className="text-[14px] font-bold">Corypting © Desert Cave Development</div>
+                        <div className="text-[12px] font-light">Все права защищены. Продукт не относится к официальным продуктам Discord. </div>
                     </div>
                 </div>
-
-            </div>
-
-            <div className={"w-full mt-[131px] flex justify-center items-center mb-[55px]"}>
-                <div className={"w-[1272px] h-[237px] bg-[#A5A6F6] rounded-[12px] flex items-center"}>
-                    <div className={"font-[700] text-[48px] w-[641px] ml-[52px] text-white"}>Join our mission to empower women to save</div>
-                    <div className={"ml-[264px]"}>
-                        <div className={"flex bg-black justify-start items-center mt-[23px] p-[10px] w-[273px] h-[75px] rounded-[12px] child:text-white"}>
-                            <img src={AppleLogo}/>
-                            <div className={"text-center ml-[10px]"}>Download on the<br/><span className={"font-bold"}>app store</span></div>
-                        </div>
-                        <div className={"flex bg-black justify-start items-center mt-[23px] p-[10px] w-[273px] h-[75px] rounded-[12px] child:text-white"}>
-                            <img src={GooglePlayLogo}/>
-                            <div className={"text-center ml-[10px]"}>Download on the<br/><span className={"font-bold"}>app store</span></div>
-                        </div>
+                <div className="flex items-center child:ml-[10px] child:cursor-pointer mr-[15px]">
+                    <div className="">
+                        <img src={Discord}/>
+                    </div>
+                    <div className="">
+                        <img src={Vkontakte}/>
                     </div>
                 </div>
             </div>
